@@ -1,0 +1,20 @@
+# Which script level should be executed. Accepted values are "all", "0", "1", "2", "3".
+execute_scripts: "all"
+
+# Rclone backend name
+backend_name: "my_files"
+
+# How many directory or file levels to ignore
+ignore_levels: 0
+
+# Directories we are searching for by 1_find_dirs.py
+find_dirs_whitelist:
+  - ".git"
+
+# Directories to be excluded from analysis by 2_analyze_dirs.py and 3_analyze_files.py
+ignore_dirs_blacklist:
+  - ".git"
+
+# Files to be excluded from analysis by 3_analyze_files.py
+ignore_files_blacklist:
+  - ".DS_Store"
